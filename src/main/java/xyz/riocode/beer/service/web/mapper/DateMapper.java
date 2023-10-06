@@ -1,4 +1,4 @@
-package xyz.riocode.msscbeerservice.web.mapper;
+package xyz.riocode.beer.service.web.mapper;
 
 import org.springframework.stereotype.Component;
 

@@ -1,8 +1,8 @@
-package xyz.riocode.msscbeerservice.web.mapper;
+package xyz.riocode.beer.service.web.mapper;
 
 import org.mapstruct.Mapper;
-import xyz.riocode.msscbeerservice.domain.Beer;
-import xyz.riocode.msscbeerservice.web.model.BeerDto;
+import xyz.riocode.beer.service.domain.Beer;
+import xyz.riocode.beer.service.web.model.BeerDto;
 
 @Mapper(uses = {DateMapper.class})
 public interface BeerMapper {

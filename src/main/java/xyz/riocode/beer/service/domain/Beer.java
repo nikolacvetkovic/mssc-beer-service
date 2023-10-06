@@ -1,4 +1,4 @@
-package xyz.riocode.msscbeerservice.domain;
+package xyz.riocode.beer.service.domain;
 
 import jakarta.persistence.*;
 import lombok.*;

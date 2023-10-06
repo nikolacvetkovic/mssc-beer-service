@@ -1,4 +1,4 @@
-package xyz.riocode.msscbeerservice.web.controller;
+package xyz.riocode.beer.service.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
@@ -7,10 +7,10 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import xyz.riocode.msscbeerservice.bootstrap.BeerLoader;
-import xyz.riocode.msscbeerservice.services.BeerService;
-import xyz.riocode.msscbeerservice.web.model.BeerDto;
-import xyz.riocode.msscbeerservice.web.model.BeerStyle;
+import xyz.riocode.beer.service.bootstrap.BeerLoader;
+import xyz.riocode.beer.service.services.BeerService;
+import xyz.riocode.beer.service.web.model.BeerDto;
+import xyz.riocode.beer.service.web.model.BeerStyle;
 
 import java.math.BigDecimal;
 import java.util.UUID;

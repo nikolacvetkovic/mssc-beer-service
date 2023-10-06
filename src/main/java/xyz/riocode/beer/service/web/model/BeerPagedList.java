@@ -1,4 +1,4 @@
-package xyz.riocode.msscbeerservice.web.model;
+package xyz.riocode.beer.service.web.model;
 
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;

@@ -1,4 +1,4 @@
-package xyz.riocode.msscbeerservice.web.controller;
+package xyz.riocode.beer.service.web.controller;
 
 import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.HttpStatus;

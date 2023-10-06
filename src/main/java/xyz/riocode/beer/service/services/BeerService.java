@@ -1,6 +1,6 @@
-package xyz.riocode.msscbeerservice.services;
+package xyz.riocode.beer.service.services;
 
-import xyz.riocode.msscbeerservice.web.model.BeerDto;
+import xyz.riocode.beer.service.web.model.BeerDto;
 
 import java.util.UUID;
 

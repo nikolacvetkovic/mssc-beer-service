@@ -1,9 +1,9 @@
-package xyz.riocode.msscbeerservice.bootstrap;
+package xyz.riocode.beer.service.bootstrap;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import xyz.riocode.msscbeerservice.domain.Beer;
-import xyz.riocode.msscbeerservice.repositories.BeerRepository;
+import xyz.riocode.beer.service.repositories.BeerRepository;
+import xyz.riocode.beer.service.domain.Beer;
 
 import java.math.BigDecimal;
 

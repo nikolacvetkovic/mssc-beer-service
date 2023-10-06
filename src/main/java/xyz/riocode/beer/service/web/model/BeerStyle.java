@@ -1,4 +1,4 @@
-package xyz.riocode.msscbeerservice.web.model;
+package xyz.riocode.beer.service.web.model;
 
 public enum BeerStyle {
     LAGER, PILSNER, STOUT, GOSE, PORTER, ALE, WHEAT, IPA, PALE_ALE, SAISON

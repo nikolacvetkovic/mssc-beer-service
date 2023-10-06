@@ -1,12 +1,12 @@
-package xyz.riocode.msscbeerservice.services;
+package xyz.riocode.beer.service.services;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import xyz.riocode.msscbeerservice.domain.Beer;
-import xyz.riocode.msscbeerservice.exception.NotFoundException;
-import xyz.riocode.msscbeerservice.repositories.BeerRepository;
-import xyz.riocode.msscbeerservice.web.mapper.BeerMapper;
-import xyz.riocode.msscbeerservice.web.model.BeerDto;
+import xyz.riocode.beer.service.exception.NotFoundException;
+import xyz.riocode.beer.service.repositories.BeerRepository;
+import xyz.riocode.beer.service.web.mapper.BeerMapper;
+import xyz.riocode.beer.service.domain.Beer;
+import xyz.riocode.beer.service.web.model.BeerDto;
 
 import java.util.UUID;
 

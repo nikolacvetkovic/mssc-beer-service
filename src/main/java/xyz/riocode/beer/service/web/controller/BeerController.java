@@ -1,12 +1,12 @@
-package xyz.riocode.msscbeerservice.web.controller;
+package xyz.riocode.beer.service.web.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import xyz.riocode.msscbeerservice.services.BeerService;
-import xyz.riocode.msscbeerservice.web.model.BeerDto;
+import xyz.riocode.beer.service.services.BeerService;
+import xyz.riocode.beer.service.web.model.BeerDto;
 
 import java.util.UUID;
 
