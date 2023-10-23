@@ -1,4 +1,4 @@
-package xyz.riocode.beer.service.services;
+package xyz.riocode.beer.service.services.brewing;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
