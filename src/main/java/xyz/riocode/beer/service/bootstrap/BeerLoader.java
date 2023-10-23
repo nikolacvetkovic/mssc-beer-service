@@ -2,8 +2,8 @@ package xyz.riocode.beer.service.bootstrap;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import xyz.riocode.beer.service.repositories.BeerRepository;
 import xyz.riocode.beer.service.domain.Beer;
+import xyz.riocode.beer.service.repositories.BeerRepository;
 
 import java.math.BigDecimal;
 
@@ -29,6 +29,8 @@ public class BeerLoader implements CommandLineRunner {
                     .beerStyle("IPA")
                     .upc(BEER_UPC_1)
                     .price(new BigDecimal("12.95"))
+                    .minOnHand(12)
+                    .quantityToBrew(200)
                     .build());
 
             beerRepository.save(Beer.builder()
@@ -36,6 +38,8 @@ public class BeerLoader implements CommandLineRunner {
                     .beerStyle("PALE_ALE")
                     .upc(BEER_UPC_2)
                     .price(new BigDecimal("11.95"))
+                    .minOnHand(12)
+                    .quantityToBrew(200)
                     .build());
 
             beerRepository.save(Beer.builder()
@@ -43,6 +47,8 @@ public class BeerLoader implements CommandLineRunner {
                     .beerStyle("PALE_ALE")
                     .upc(BEER_UPC_3)
                     .price(new BigDecimal("11.95"))
+                    .minOnHand(12)
+                    .quantityToBrew(200)
                     .build());
         }
     }
