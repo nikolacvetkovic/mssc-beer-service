@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import xyz.riocode.beer.service.config.JmsConfig;
 import xyz.riocode.beer.service.domain.Beer;
-import xyz.riocode.beer.service.events.BrewBeerEvent;
-import xyz.riocode.beer.service.events.NewInventoryEvent;
 import xyz.riocode.beer.service.repositories.BeerRepository;
-import xyz.riocode.beer.service.web.model.BeerDto;
+import xyz.riocode.common.events.BrewBeerEvent;
+import xyz.riocode.common.events.NewInventoryEvent;
+import xyz.riocode.common.model.BeerDto;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -31,9 +31,6 @@ public class BrewBeerListener {
 
         log.debug(beerDto.getBeerName() + " brewed. Quantity on Hand is " + beerDto.getQuantityOnHand());
 
-        jmsTemplate.convertAndSend(JmsConfig.NEW_INVENTORY_QUEUE,
-                                    NewInventoryEvent.builder()
-                                        .beerDto(beerDto)
-                                        .build());
+        jmsTemplate.convertAndSend(JmsConfig.NEW_INVENTORY_QUEUE, new NewInventoryEvent(beerDto));
     }
 }

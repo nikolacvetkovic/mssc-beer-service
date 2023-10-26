@@ -9,9 +9,9 @@ import xyz.riocode.beer.service.domain.Beer;
 import xyz.riocode.beer.service.exception.NotFoundException;
 import xyz.riocode.beer.service.repositories.BeerRepository;
 import xyz.riocode.beer.service.web.mapper.BeerMapper;
-import xyz.riocode.beer.service.web.model.BeerDto;
-import xyz.riocode.beer.service.web.model.BeerPagedList;
-import xyz.riocode.beer.service.web.model.BeerStyle;
+import xyz.riocode.common.model.BeerDto;
+import xyz.riocode.common.model.BeerPagedList;
+import xyz.riocode.common.model.BeerStyle;
 
 import java.util.UUID;
 import java.util.stream.Collectors;

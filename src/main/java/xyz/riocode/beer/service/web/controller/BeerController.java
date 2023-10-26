@@ -8,9 +8,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import xyz.riocode.beer.service.services.BeerService;
-import xyz.riocode.beer.service.web.model.BeerDto;
-import xyz.riocode.beer.service.web.model.BeerPagedList;
-import xyz.riocode.beer.service.web.model.BeerStyle;
+import xyz.riocode.common.model.BeerDto;
+import xyz.riocode.common.model.BeerPagedList;
+import xyz.riocode.common.model.BeerStyle;
 
 import java.util.UUID;
 

@@ -1,9 +1,9 @@
 package xyz.riocode.beer.service.services;
 
 import org.springframework.data.domain.PageRequest;
-import xyz.riocode.beer.service.web.model.BeerDto;
-import xyz.riocode.beer.service.web.model.BeerPagedList;
-import xyz.riocode.beer.service.web.model.BeerStyle;
+import xyz.riocode.common.model.BeerDto;
+import xyz.riocode.common.model.BeerPagedList;
+import xyz.riocode.common.model.BeerStyle;
 
 import java.util.UUID;
 

@@ -1,4 +1,4 @@
-package xyz.riocode.beer.service.web.model;
+package xyz.riocode.common.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotBlank;

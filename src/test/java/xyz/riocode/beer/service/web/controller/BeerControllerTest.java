@@ -9,8 +9,8 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import xyz.riocode.beer.service.bootstrap.BeerLoader;
 import xyz.riocode.beer.service.services.BeerService;
-import xyz.riocode.beer.service.web.model.BeerDto;
-import xyz.riocode.beer.service.web.model.BeerStyle;
+import xyz.riocode.common.model.BeerDto;
+import xyz.riocode.common.model.BeerStyle;
 
 import java.math.BigDecimal;
 import java.util.UUID;

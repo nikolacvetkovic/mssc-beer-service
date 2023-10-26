@@ -7,10 +7,10 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import xyz.riocode.beer.service.config.JmsConfig;
 import xyz.riocode.beer.service.domain.Beer;
-import xyz.riocode.beer.service.events.BrewBeerEvent;
 import xyz.riocode.beer.service.repositories.BeerRepository;
 import xyz.riocode.beer.service.services.inventory.BeerInventoryService;
 import xyz.riocode.beer.service.web.mapper.BeerMapper;
+import xyz.riocode.common.events.BrewBeerEvent;
 
 import java.util.List;
 

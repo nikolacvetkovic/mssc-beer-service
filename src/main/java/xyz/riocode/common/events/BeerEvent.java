@@ -1,10 +1,10 @@
-package xyz.riocode.beer.service.events;
+package xyz.riocode.common.events;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import xyz.riocode.beer.service.web.model.BeerDto;
+import xyz.riocode.common.model.BeerDto;
 
 import java.io.Serial;
 import java.io.Serializable;

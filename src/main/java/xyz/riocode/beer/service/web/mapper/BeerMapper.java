@@ -3,7 +3,7 @@ package xyz.riocode.beer.service.web.mapper;
 import org.mapstruct.DecoratedWith;
 import org.mapstruct.Mapper;
 import xyz.riocode.beer.service.domain.Beer;
-import xyz.riocode.beer.service.web.model.BeerDto;
+import xyz.riocode.common.model.BeerDto;
 
 @Mapper(uses = {DateMapper.class})
 @DecoratedWith(BeerMapperDecorator.class)

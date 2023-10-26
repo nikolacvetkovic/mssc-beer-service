@@ -3,7 +3,7 @@ package xyz.riocode.beer.service.web.mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import xyz.riocode.beer.service.domain.Beer;
 import xyz.riocode.beer.service.services.inventory.BeerInventoryService;
-import xyz.riocode.beer.service.web.model.BeerDto;
+import xyz.riocode.common.model.BeerDto;
 
 public abstract class BeerMapperDecorator implements BeerMapper {
 

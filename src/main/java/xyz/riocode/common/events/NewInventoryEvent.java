@@ -1,7 +1,9 @@
-package xyz.riocode.beer.service.events;
+package xyz.riocode.common.events;
 
-import xyz.riocode.beer.service.web.model.BeerDto;
+import lombok.NoArgsConstructor;
+import xyz.riocode.common.model.BeerDto;
 
+@NoArgsConstructor
 public class NewInventoryEvent extends BeerEvent{
 
     public NewInventoryEvent(BeerDto beerDto) {
