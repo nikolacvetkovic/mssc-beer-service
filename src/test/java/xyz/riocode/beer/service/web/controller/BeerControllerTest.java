@@ -7,10 +7,11 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import xyz.riocode.beer.service.bootstrap.BeerLoader;
-import xyz.riocode.beer.service.services.BeerService;
-import xyz.riocode.common.model.BeerDto;
-import xyz.riocode.common.model.BeerStyle;
+import xyz.riocode.brewery.beer.service.bootstrap.BeerLoader;
+import xyz.riocode.brewery.beer.service.services.BeerService;
+import xyz.riocode.brewery.beer.service.web.controller.BeerController;
+import xyz.riocode.brewery.common.model.BeerDto;
+import xyz.riocode.brewery.common.model.BeerStyle;
 
 import java.math.BigDecimal;
 import java.util.UUID;
