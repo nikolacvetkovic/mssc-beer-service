@@ -1,4 +1,4 @@
-package xyz.riocode.beer.service.web.controller;
+package xyz.riocode.brewery.beer.service.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,6 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import xyz.riocode.brewery.beer.service.bootstrap.BeerLoader;
 import xyz.riocode.brewery.beer.service.services.BeerService;
-import xyz.riocode.brewery.beer.service.web.controller.BeerController;
 import xyz.riocode.brewery.common.model.BeerDto;
 import xyz.riocode.brewery.common.model.BeerStyle;
 

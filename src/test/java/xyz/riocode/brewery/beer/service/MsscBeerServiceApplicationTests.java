@@ -1,4 +1,4 @@
-package xyz.riocode.beer.service;
+package xyz.riocode.brewery.beer.service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
