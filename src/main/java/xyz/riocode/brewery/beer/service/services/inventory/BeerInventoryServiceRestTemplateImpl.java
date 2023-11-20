@@ -2,6 +2,7 @@ package xyz.riocode.brewery.beer.service.services.inventory;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
+@Profile("!local-discovery")
 @Slf4j
 @Service
 public class BeerInventoryServiceRestTemplateImpl implements BeerInventoryService {
