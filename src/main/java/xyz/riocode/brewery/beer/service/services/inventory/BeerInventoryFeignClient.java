@@ -10,7 +10,7 @@ import xyz.riocode.brewery.beer.service.services.inventory.model.BeerInventoryDt
 import java.util.List;
 import java.util.UUID;
 
-@FeignClient(name = "beer-inventory-service")
+@FeignClient(name = "beer-inventory-service", fallback = BeerInventoryFailoverFeignClientImpl.class)
 public interface BeerInventoryFeignClient {
     @RequestMapping(method = RequestMethod.GET, value = "/api/v1/beer/{beerId}/inventory")
     ResponseEntity<List<BeerInventoryDto>> getOnHandInventory(@PathVariable UUID beerId);
