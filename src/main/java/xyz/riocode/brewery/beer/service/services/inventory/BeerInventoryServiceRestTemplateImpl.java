@@ -2,6 +2,7 @@ package xyz.riocode.brewery.beer.service.services.inventory;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Profile;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
@@ -26,8 +27,10 @@ public class BeerInventoryServiceRestTemplateImpl implements BeerInventoryServic
     @Value("${xyz.brewery.beer-inventory-service-host}")
     private String beerInventoryServiceHost;
 
-    public BeerInventoryServiceRestTemplateImpl(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
+    public BeerInventoryServiceRestTemplateImpl(RestTemplateBuilder restTemplateBuilder,
+                                                @Value("${xyz.brewery.beer-inventory-service-user}") String inventoryUser,
+                                                @Value("${xyz.brewery.beer-inventory-service-password}") String inventoryPassword) {
+        this.restTemplate = restTemplateBuilder.basicAuthentication(inventoryUser, inventoryPassword).build();
     }
 
     @Override
