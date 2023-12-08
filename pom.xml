@@ -12,7 +12,7 @@
     <artifactId>beer-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>mssc-beer-service</name>
+    <name>beer-service</name>
     <description>SFG Beer Service</description>
 
     <dependencies>
