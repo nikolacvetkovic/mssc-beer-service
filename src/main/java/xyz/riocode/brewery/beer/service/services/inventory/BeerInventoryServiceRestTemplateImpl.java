@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
-@Profile("!local-discovery")
+@Profile("!local")
 @Slf4j
 @Service
 public class BeerInventoryServiceRestTemplateImpl implements BeerInventoryService {
